@@ -30,9 +30,28 @@
         <h2>About Me</h2>
         <div class="about-content">
             <img src="Images/Senior Headshot.jpeg" alt="Brendon" class="profile-img">
-            <p>
+
+            <p id="aboutpara">
                 I'm Brendon Peters, a Computer Science and Data Science student at Worcester Polytechnic Institute (WPI) graduating in May 2027. I’ve developed software for an international rocket competition, built an AI-driven video game, and analyzed 150k+ entry datasets, combining my passion for programming, data analysis, and innovation. I’m seeking a software engineering internship to apply my skills, solve real-world problems, and grow as a developer.
             </p>
+
+            <script>
+                function updateParagraphText() {
+                    const paragraph = document.getElementById("aboutpara");
+                    if (window.innerWidth <= 768) {
+                        paragraph.textContent = "I'm Brendon Peters, a Computer Science and Data Science student at WPI, graduating in May 2027. I've developed software for a rocket competition, built an AI-driven game, and analyzed 150k+ datasets. I'm seeking a software engineering internship to apply my skills and grow as a developer.";
+                    } else {
+                        paragraph.textContent = "                I'm Brendon Peters, a Computer Science and Data Science student at Worcester Polytechnic Institute (WPI) graduating in May 2027. I’ve developed software for an international rocket competition, built an AI-driven video game, and analyzed 150k+ entry datasets, combining my passion for programming, data analysis, and innovation. I’m seeking a software engineering internship to apply my skills, solve real-world problems, and grow as a developer.\n";
+                    }
+                }
+
+                // Run on page load
+                updateParagraphText();
+
+                // Run when the window resizes
+                window.addEventListener("resize", updateParagraphText);
+            </script>
+
         </div>
     </div>
 </section>
@@ -79,14 +98,14 @@
     </div>
 </section>
 
+<!-- Work Experience -->
 <section id="experience" class="experience">
     <div class="container">
         <h2>Experience</h2>
         <div class="project-grid">
             <div class="project-card">
                 <h3>Software Developer</h3>
-                <h5>Worcester Polytechnic Institute</h5>
-
+                <h4>Worcester Polytechnic Institute</h4>
                 <p>
                     Collaborating in a team of 3 to update the <a style="color: cornflowerblue" href="https://boglweb.github.io/"> <u>BoGL Web</u></a> application, designed to generate
                     unsimplified, simplified, and causal bond diagrams for mechanical, electrical, and
@@ -97,11 +116,12 @@
             </div>
             <div class="project-card">
                 <h3>Object-Oriented Programming and Robotics Engineering Instructor</h3>
+                <h4>iD Tech</h4>
                 <p>
                     Java Coding and Object-Oriented Programming: Taught Java programming and
                     object-oriented principles to students aged 13-17, focusing on foundational
                     coding skills, problem-solving techniques, and software development best practices.
-                    Robotics Engineering: Led a hands-on robotics class where students designed,
+                    <br/>Robotics Engineering: Led a hands-on robotics class where students designed,
                     built, and programmed their own robots, fostering creativity, teamwork, and
                     practical engineering skills.
                     <br/><span style="color: #7b7b7b">Jun 2024 - Aug 2024</span>
@@ -109,6 +129,7 @@
             </div>
             <div class="project-card">
                 <h3>Multimedia Conversion & LaTeX Transcription Specialist</h3>
+                <h4>Worcester Polytechnic Institute</h4>
                 <p>
                     Video Conversion: Converted VHS tapes to MP4 format, ensuring high-quality
                     digital preservation of valuable media content. Document Transcription:
