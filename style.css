@@ -67,6 +67,7 @@ a {
 
 /* Better focus styles */
 *:focus-visible {
+    outline: 3px solid var(--color-primary);
     outline: 3px solid color-mix(in srgb, var(--color-primary) 65%, white);
     outline-offset: 2px;
     border-radius: 6px;
@@ -206,6 +207,7 @@ nav ul li a:hover::after {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
+    border: 3px solid var(--color-primary);
     border: 3px solid color-mix(in srgb, var(--color-primary) 35%, transparent);
     box-shadow: var(--shadow-sm);
 }
