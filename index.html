@@ -4,16 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brendon Peters - Portfolio</title>
+    <meta name="description" content="Portfolio of Brendon Peters — Software Developer and WPI CS/Data Science student. Projects in AI, web apps, robotics, and data analysis.">
+    <link rel="canonical" href="https://bjpeters2027.github.io/">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#981400">
+    <meta name="color-scheme" content="light dark">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bjpeters2027.github.io/">
+    <meta property="og:title" content="Brendon Peters - Portfolio">
+    <meta property="og:description" content="Software Developer | Student | Problem Solver. Explore projects in AI, web, robotics, and data.">
+    <meta property="og:image" content="https://bjpeters2027.github.io/Images/Senior%20Headshot.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Brendon Peters - Portfolio">
+    <meta name="twitter:description" content="Software Developer | Student | Problem Solver. Explore projects in AI, web, robotics, and data.">
+    <meta name="twitter:image" content="https://bjpeters2027.github.io/Images/Senior%20Headshot.jpeg">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <!-- Header Section -->
 <header>
     <div class="container">
+        <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-pressed="false" aria-label="Toggle theme">
+            <span class="icon-sun" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 4V2M12 22v-2M4.93 4.93 3.52 3.52M20.48 20.48l-1.41-1.41M4 12H2M22 12h-2M4.93 19.07 3.52 20.48M20.48 3.52l-1.41 1.41" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+            </span>
+            <span class="icon-moon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                </svg>
+            </span>
+        </button>
         <h1>Brendon Peters</h1>
-        <p>Software Developer | Student | Problem Solver</p>
-        <nav>
+        <p>Software Engineer | Student | Machine Learning Engineer</p>
+        <nav aria-label="Primary">
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -24,15 +55,17 @@
     </div>
 </header>
 
+<main id="main" tabindex="-1">
+
 <!-- About Section -->
 <section id="about" class="about">
     <div class="container">
         <h2>About Me</h2>
         <div class="about-content">
-            <img src="Images/Senior Headshot.jpeg" alt="Brendon" class="profile-img">
+            <img src="Images/Senior Headshot.jpeg" alt="Portrait of Brendon Peters" class="profile-img" loading="lazy" width="150" height="150">
 
             <p id="aboutpara">
-                I'm Brendon Peters, a Computer Science and Data Science student at Worcester Polytechnic Institute (WPI) graduating in May 2027. I’ve developed software for an international rocket competition, built an AI-driven video game, and analyzed 150k+ entry datasets, combining my passion for programming, data analysis, and innovation. I’m seeking a software engineering internship to apply my skills, solve real-world problems, and grow as a developer.
+                I’m Brendon Peters, a Computer Science and Data Science student at WPI (Class of 2027) with a focus on software engineering and machine learning. I’ve built award-winning rocket payload software, full-stack web apps, and ML models that bring ethics into tech. I’m passionate about applying code and data to solve real-world problems and create impactful software.
             </p>
 
             <script>
@@ -84,7 +117,7 @@
                     unique rounds, boss fights, power-ups, and obstacles like portals and black holes.
                     Controlled via Leap Motion hand-tracking, it offers a retro yet immersive experience.
                 </p>
-                <a href="https://devpost.com/software/tomo-dmajc3" class="btn" target="_blank">View Project</a>
+                <a href="https://devpost.com/software/tomo-dmajc3" class="btn" target="_blank" rel="noopener noreferrer">View Project</a>
             </div>
             <div class="project-card">
                 <h3>IREC Rocket</h3>
@@ -92,7 +125,7 @@
                     Intercollegiate Rocketry Engineering Competition. Our team won awards for technical excellence
                     and for the payload challenge of computer guided landing.
                 </p>
-                <a href="https://www.soundingrocket.org/2023-sa-cup.html" class="btn" target="_blank">View Project</a>
+                <a href="https://www.soundingrocket.org/2023-sa-cup.html" class="btn" target="_blank" rel="noopener noreferrer">View Project</a>
             </div>
             <div class="project-card">
                 <h3>MPI vs PSL Poverty Comparison Website</h3>
@@ -101,7 +134,7 @@
                     and Poverty Stoplight (PSL) indicators. This platform enables users
                     to explore how different poverty assessment models align and diverge.
                 </p>
-                <a href="https://paai-github-io.onrender.com/" class="btn" target="_blank">View Project</a>
+                <a href="https://paai-github-io.onrender.com/" class="btn" target="_blank" rel="noopener noreferrer">View Project</a>
             </div>
             <div class="project-card">
                 <h3>Ethical Repairability Calculator</h3>
@@ -111,7 +144,7 @@
                     Huber-loss linear regression model to reward user empowerment and penalize 
                     predatory design, framing right to repair as both a technical and moral issue.
                 </p>
-                <a href="https://repairability-calculator.vercel.app/search" class="btn" target="_blank">View Project</a>
+                <a href="https://repairability-calculator.vercel.app/search" class="btn" target="_blank" rel="noopener noreferrer">View Project</a>
             </div>
             <div class="project-card">
                 <h3>Brigham & Women's Hospital Website (Unofficial)</h3>
@@ -150,7 +183,7 @@
                 <h4>Worcester Polytechnic Institute</h4>
                 <p>
                     Collaborating in a team of 3 to update the
-                    <a style="color: cornflowerblue" href="https://boglweb.github.io/" target="_blank">
+                    <a style="color: cornflowerblue" href="https://boglweb.github.io/" target="_blank" rel="noopener noreferrer">
                         <u>BoGL Web</u></a> application, designed to generate unsimplified, 
                         simplified, and causal bond diagrams for mechanical, electrical, and
                         hydraulic systems. Developing and maintaining features using C#, HTML, and CSS to
@@ -182,10 +215,38 @@
         <p>&copy; 2025 Brendon Peters. All rights reserved.</p>
         <div class="social-links">
             <a href="mailto:brendonpeters2023@gmail.com">Email</a>
-            <a href="https://github.com/bjpeters2027" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/brendon-peters-comp-sci" target="_blank">LinkedIn</a>
+            <a href="https://github.com/bjpeters2027" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/brendon-peters-comp-sci" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
     </div>
 </footer>
+</main>
+
+<script>
+    (function themeInit(){
+        try {
+            const stored = localStorage.getItem('theme');
+            if (stored === 'dark') {
+                document.documentElement.classList.add('dark-theme');
+            }
+        } catch {}
+    })();
+
+    (function themeToggle(){
+        const toggle = document.getElementById('theme-toggle');
+        if (!toggle) return;
+        function applyState(isDark) {
+            document.documentElement.classList.toggle('dark-theme', isDark);
+            toggle.setAttribute('aria-pressed', String(isDark));
+        }
+        toggle.addEventListener('click', function(){
+            const isDark = !document.documentElement.classList.contains('dark-theme');
+            applyState(isDark);
+            try { localStorage.setItem('theme', isDark ? 'dark' : 'light'); } catch {}
+        });
+        applyState(document.documentElement.classList.contains('dark-theme'));
+    })();
+</script>
+
 </body>
 </html>
